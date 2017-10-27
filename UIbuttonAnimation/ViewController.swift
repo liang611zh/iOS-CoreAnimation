@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func pulseBtn(_ sender: UIButton) {
+        sender.pulseit()
+    }
+    
+    @IBAction func flashBtn(_ sender: UIButton) {
+        sender.flashit()
+    }
+    @IBAction func shakeBtn(_ sender: UIButton) {
+        sender.shakeit()
+    }
 }
 
