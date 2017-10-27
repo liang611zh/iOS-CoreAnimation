@@ -33,6 +33,7 @@ extension UIButton {
         flash.duration = 0.3
         flash.fromValue = 1
         flash.toValue = 0.1
+        //CAMediaTimingFunction represents one segment of a function that defines the pacing of an animation as a timing curve.
         flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         flash.autoreverses = true
         flash.repeatCount = 3
@@ -48,10 +49,10 @@ extension UIButton {
         shake.repeatCount = 2
         shake.autoreverses = true
         
-        let fromPoint = CGPoint(x: center.x - 15, y: center.y)
+        let fromPoint = CGPoint(x: center.x - 15, y: center.y - 5)
         let fromValue = NSValue(cgPoint: fromPoint)
         
-        let toPoint = CGPoint(x: center.x + 15, y: center.y)
+        let toPoint = CGPoint(x: center.x + 15, y: center.y + 5)
         let toValue = NSValue(cgPoint: toPoint)
         
         shake.fromValue = fromValue
